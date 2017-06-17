@@ -1,0 +1,244 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    -webkit-backface-visibility: hidden;
+}
+
+li {
+    list-style: none;
+}
+img {
+	display: block;
+	
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: rgba(125, 125, 125, 0.7);
+    -webkit-border-radius: 6px;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+}
+.clearfix {
+	zoom: 1;
+}
+
+
+html {
+	font-size: 625%;
+	background-color: rgba(0,0,0,.2);
+}
+
+body {
+	font-size: 16px;
+}
+
+header {
+	height: .4rem;
+	background-color: #0096ff;
+	text-align: center;
+	line-height: .4rem;
+}
+
+header h3 {
+	color: #fff;
+	font-weight: 600;
+}
+
+
+.parts {
+	background-color: #fff;
+}
+.parts .entry {
+	margin-bottom: .1rem;
+}
+.parts .entry> img {
+	width: 100%;
+}
+
+
+
+.parts .list {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.parts .list .list-left {
+	width: 50%;
+	
+}
+.parts .list .list-left a {
+	display: block;
+	height: 1.6rem;
+	border-right: 1px solid #ededed;
+	padding: .2rem .1rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ededed;
+	
+}
+.parts p.title {
+	font-size: .18rem;
+	color: #ff9700;
+	margin-bottom: .05rem;
+}
+.parts p.tip {
+	font-size: .12rem;
+}
+.parts .list .list-left img {
+	position: relative;
+	width: .6rem;
+	height: .6rem;
+	left: .3rem;
+	top: .2rem;
+}
+
+
+
+
+
+.parts .list .list-right {
+	width: 50%;
+}
+.parts .list .list-right a {
+	display: block;
+	height: 50%;
+	box-sizing: border-box;
+	padding: .2rem .16rem;
+	position: relative;
+	border-bottom: 1px solid #ededed;
+}
+
+
+.parts .list .list-right a img {
+	position: absolute;
+	width: .4rem;
+	height:.4rem;
+	right: .1rem;
+	top: .2rem;
+}
+
+
+.food-list .mstj {
+	background-color: #fff;
+	margin-bottom: .1rem;
+}
+.food-list .mstj .head {
+	text-align: center;
+}
+.food-list .mstj .head h2 {
+	padding-top: .15rem;
+	font-size: .16rem;
+	line-height: .2rem;
+	font-weight: 600;
+	background:url(../images/mstj.png) 36% 100% no-repeat;
+	background-size: .2rem .2rem;
+}
+.food-list .mstj .head p {
+	font-size: .12rem;
+}
+
+.food-list .mstj .container {
+	padding: .12rem 0 .16rem .16rem;
+}
+.food-list .mstj .container a {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+.food-list .mstj .container a img {
+	width: .76rem;
+	height: .76rem;
+	margin: 0 auto;
+}
+.food-list .mstj .container a p {
+	font-size: .12rem;
+	color: #333;
+	margin-bottom: .05rem;
+}
+.food-list .mstj .container a span {
+	font-size: .12rem;
+	color: #ff6000;
+}
+
+.food-list .mstj>P {
+	font-size: .14rem;
+	color: #999;
+	text-align: center;
+	padding-bottom: .12rem; 
+}

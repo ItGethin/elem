@@ -1,0 +1,113 @@
+.no-user {
+	text-align: center;
+	margin-top: .85rem;
+}
+.no-user img {
+	width: 1.3rem;
+	height: .7rem;
+	margin: 0 auto;
+}
+.no-user h3 {
+	font-size: .16rem;
+	margin: .1rem auto;
+}
+.no-user button {
+	width: 1rem;
+	height: .36rem;
+	border-radius: .06rem;
+	background-color: #56d176;
+	padding: .08rem 0;
+	border: none;
+	color: #fff;
+	font-size: .12rem;
+	text-align: center;
+}
+
+
+.user{
+	display: flex;
+	background-color: #fff;
+}
+.user a {
+	display: block;
+	flex: 1;
+	text-align: center;
+	font-size: .16rem;
+	color: #333;
+	font-weight: 600;
+	/*color: #2395ff;*/
+	line-height: .4rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+
+.user a.active {
+	color: #2395ff;
+	border-bottom: 2px solid #2395ff;
+}
+
+.dn-container {
+	background-color: #fff;
+	padding-bottom: .1rem;
+}
+.dn-container .dn-info {
+	display: flex;
+	padding: .15rem;
+	justify-content: space-between;
+}
+.dn-container .dn-info .info-msg {
+	display: flex;
+} 
+.dn-container .dn-info .info-msg img {
+	display: inline-block;
+	width: .6rem;
+	height: .6rem;
+}
+.dn-container .dn-info .info-msg a {
+	display: block;
+	padding-left: .1rem;
+}
+.dn-container .dn-info .info-msg a i {
+	display: block;
+	font-style: normal;
+	font-size: .18rem;
+	color: #000;
+	font-weight: 700;
+	padding-top: .05rem;
+	margin-bottom: .1rem;
+}
+.dn-container .dn-info .info-msg a em {
+	display: block;
+	font-style: normal;
+	font-size: .14rem;
+}
+.dn-container .dn-info span {
+	padding-top: .05rem;
+	
+}
+
+.dn-container .dn-price {
+	padding-left: .8rem;
+}
+.dn-container .dn-price span {
+	display: block;
+	
+}
+.dn-container .dn-price span:nth-child(1) {
+	color: #666;
+	margin-bottom: .05rem;
+}
+
+
+.message {
+	margin-top: .2rem;
+}
+
+.message p {
+	text-align: center;
+	font-size: .14rem;
+	color: #666;
+}
+.dn-info a em{
+	color:#666;
+}

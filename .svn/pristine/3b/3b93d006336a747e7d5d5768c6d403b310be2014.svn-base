@@ -1,0 +1,12 @@
+var express = require('express');
+var router = express.Router();
+var api=require('./default/api');
+
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+  res.send('首页模板');
+});
+
+router.use('/api',api);
+
+module.exports = router;

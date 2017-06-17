@@ -1,0 +1,264 @@
+header{
+	height: 0.86rem;
+	padding: 0.09rem 0.12rem;
+	background-color:#0096ff;
+	.h-top{
+		display: flex;
+		font-size: .15rem;
+		height: 0.3rem;
+		line-height: .3rem;
+		justify-content: space-between;
+		color:#fff;
+	}
+	.h-search{
+		input{
+			margin: .06rem 0;
+			width: 100%;
+			border-radius: .15rem;
+			height: 0.29rem;
+			text-align: center;
+			font-size: .12rem;
+			color:#333;
+		}
+		.uls{
+			width: 100%;
+			// overflow: hidden;
+			overflow-x:scroll;
+			ul{
+			display: flex;
+			// overflow: hidden;
+			// flex-wrap: nowrap;
+			white-space:nowrap;
+			
+			li{
+				float: left;
+				padding-right:0.13rem;
+				a{
+					color:#fff;
+				}
+			}
+		}
+		}
+		
+	}
+}
+
+section{
+	border-bottom:.01rem solid #efefef; 
+}
+.swiper-container{
+	height:1.51rem;
+	width: 100%;
+	background-color: #fff;
+	.swiper-pagination{
+		.swiper-pagination-bullet{
+			height: .05rem;
+			width: .05rem;
+			margin: 0 0.02rem;
+		}
+		.swiper-pagination-bullet-active{
+			background-color: #666;
+		}
+	}
+
+	.swiper-slide{
+		ul{
+			display: flex;
+			height: 82%;
+			justify-content:center;
+			flex-wrap:wrap;
+			li{
+				width: 25%;
+				height: 45%;
+				margin-top:0.09rem;
+				display: flex;
+				justify-content:center;
+				a{
+					display: flex;
+				    flex-direction: column;
+				    justify-content:center;
+				    align-items:center;
+					height: 100%;
+					width: 100%;
+					img{
+						width: 50%;
+					}
+					span{
+						font-size: .12rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+.Recommend{
+	background-color: #fff;
+	width: 90%;
+	padding:0 5%;
+	height: 0.29rem;
+	line-height: .29rem;
+	margin-top:0.09rem ;
+	h3{
+		color:#333;
+	}
+}
+
+.store{
+	width: 100%;
+	background-color: #fff;
+	a{
+		display: flex;
+		width: 100%;
+		.st-left{
+			width: 0.51rem;
+			height: .51rem;
+			padding: 0.13rem 0.09rem;
+			img{
+				width: 100%;
+			}
+		}
+		.st-right{
+			padding: 0.13rem 0.09rem;
+			width:100%;
+			flex:1;
+			.st-top{
+				display: flex;
+				overflow: hidden;
+				justify-content:space-between;
+				>div{
+					display: flex;
+					span{
+						background-color: #ffd930;
+						color:#000;
+					}
+				}
+				h4{
+					margin: 0;
+					// font-size: .13rem;
+					color:#666;
+				}
+				i{
+					font-style: normal;
+				}
+			}
+
+			.st-cen{
+				display: flex;
+				align-items:center;
+				.star{
+					position: relative;
+					width: .45rem;
+					// overflow: hidden;
+					span{
+						display: inline-block;
+						height: .09rem;
+						width: .09rem;
+						float: left;
+					}
+					.star1{
+						position: absolute;
+						top:0;
+						left: 0;
+						overflow: hidden;
+						span{
+							background:url(../images/star1.jpg);
+						}
+					}
+					.star2{
+						width: 50%;
+						>div{
+							display: block;
+							width: .45rem;
+						}
+						span{
+							background:url(../images/star.jpg);
+						}
+						overflow: hidden;
+						white-space:normal;
+						// overflow-x: visible;
+						position: absolute;
+						top:0;
+						left: 0;
+					}
+				}
+				i,em{
+					font-style: normal;
+					font-size: .12rem;
+				}
+				i{
+					color:red;
+				}
+			}
+
+			.st-bo{
+				display: flex;
+				justify-content:space-between;
+				.st-bo-left{
+					span{
+						color:#666;
+						&:last-child{
+							color:#666;
+						}
+					}
+				}
+				.st-bo-right{
+				}
+				>div{
+					>span{
+						font-size: .12rem;
+						&:last-child{
+							color:#2395ff;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff;
+	ul{display: flex;width: 100%;
+		li{
+			width: 25%;
+			a{
+				display: inline-block;
+				height: .5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content:center;
+				align-items:center;
+				img{
+					height: 40%;
+				}
+			}
+		}
+	}
+}
+
+.to-top{
+	height: .35rem;
+	width: .35rem;
+	position: fixed;
+	bottom:.7rem;
+	right:.1rem;
+	background-color: #fff;
+	border:.01rem solid #c0c0c0;
+	border-radius:50%; 
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	img{
+		display: block;
+	}
+}
+
+.jiade{
+	height: .5rem;
+	width: 100%;
+}

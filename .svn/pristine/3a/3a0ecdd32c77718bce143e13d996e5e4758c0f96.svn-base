@@ -1,0 +1,57 @@
+<%-include ../public/header.ejs %>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+<%-include ../public/navbar.ejs%>
+
+<%-include ../public/nav.ejs%>
+
+<div class="content">
+
+  <div class="header">
+
+    <h1 class="page-title">增加轮播图</h1>
+  </div>
+
+  <ul class="breadcrumb">
+    <li><a href="../index">首页</a> <span class="divider">/</span></li>
+    <li><a href="">轮播图列表</a> <span class="divider">/</span></li>
+    <li class="active">增加轮播图</li>
+  </ul>
+
+  <div class="container-fluid">
+    <form id="tab" method="post" action="<%=host%>/admin/slide/doAdd">
+      <label>title</label>
+      <input name="title" type="text" class="input-xlarge">
+      <label>description</label>
+      <input name="description" type="text" class="input-xlarge">
+      <label>img</label>
+      <input name="img" type="text" class="input-xlarge">
+      <label>article_id</label>
+      <input name="article_id" type="text" class="input-xlarge">
+      <label>status</label>
+      <input name="status" type="text" class="input-xlarge">
+      <label>addtime</label>
+      <input name="addtime" type="text" class="input-xlarge">
+      <br/>
+      <input type="submit" value="提交"/>
+    </form>
+  </div>
+</div>
+
+<script src="<%=host %>/lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+  $("[rel=tooltip]").tooltip();
+  $(function() {
+    $('.demo-cancel-click').click(function(){return false;});
+  });
+</script>
+
+</body>
+</html>

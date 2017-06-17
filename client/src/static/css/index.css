@@ -1,0 +1,196 @@
+.active span{
+    color:#0A9BFF;
+}
+footer span{
+    color:#666;
+}
+.fund header{
+    width:100%;
+    z-index: 10000;
+    position: fixed;
+    top:0;
+    height:.4rem;
+    padding:0;
+    margin: 0;
+}
+.fund header h3{
+    padding:0;
+    margin: 0;
+    height:.4rem;
+    font-size:.18rem;
+    line-height: .4rem;
+    color:#fff;
+    text-align: center;
+}
+.fund header img{
+    position: absolute;
+    top:.1rem;
+    left:.13rem;
+}
+.header-jiade{
+    height:.4rem;
+}
+
+.fund-se{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+}
+.fund-se>div{
+    width:50%;
+    height:1.55rem;
+}
+.fund-se>div a{
+    display: block;
+    position: relative;
+    padding:.2rem .128rem;
+    box-sizing: border-box;
+    border-bottom: .01rem solid #efefef;
+}
+.fund-se>div a p{
+    padding:0;
+    margin:0;
+    font-size:.12rem;
+}
+.fund-se>div a>img{
+    width:50%;
+    position: absolute;
+}
+.fund-se>div h4{
+    padding:0;
+    margin:0;
+    font-size:.15rem;
+}
+.fund-se .se-left a{
+    height:100%;
+    border-right:.01rem solid #efefef;
+}
+.fund-se .se-left img{
+    bottom:.25rem;
+    left:.3rem;
+    width:40%;
+}
+.fund-se .se-right img{
+    bottom:.2rem;
+    right:.1rem;
+    width:25%;
+}
+.fund-se .se-right a{
+    height:50%;
+}
+
+.fund-se .se-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.fund-se .se-left h4{
+    color:rgb(255, 151, 0);
+}
+.fund-se .se-right .se1 h4{
+    color:rgb(245, 120, 93);
+}
+.fund-se .se-right .se2 h4{
+    color:rgb(27, 169, 225);
+}
+
+.Overlord{
+    margin-top:.1rem;
+    width:100%;
+}
+.Overlord a {
+    display: block;
+    width:100%;
+}
+.Overlord a img{
+    width:100%;
+}
+.more{
+    width:100%;
+}
+.more a{
+    display: block;
+    width:100%;
+    color:#666;
+    text-align: center;
+}
+
+.t-cen{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.t-cen a{
+    width:33%;
+}
+.t-cen a h3{
+    padding:0;
+    font-size:.12rem;
+    font-weight: 200;
+    color:#666;
+}
+.t-cen a i{
+    font-style:normal;
+    color:rgb(255, 151, 0);
+}
+.t-cen a img{
+    width:95%;
+}
+.jiade{
+    height:.5rem;
+}
+.tt-top{
+    display: flex;
+    margin-top:.2rem;
+    justify-content: center;
+    align-items: center;
+}
+.tt-top span{
+    display: block;
+    background: #888;
+    width:.1rem;
+    height:.02rem;
+    position: relative;
+}
+.tt-top span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width:.04rem;
+    height:.04rem;
+    border-radius: 50%;
+    background-color: #333;
+}
+.tt-top span:nth-of-type(1)::after{
+    right: 0;
+    margin-top:-.01rem;
+}
+.tt-top span:nth-of-type(2)::after{
+    left: 0;
+    margin-top:-.01rem;
+}
+.tt-top h2{
+    padding:0;
+    margin:0;
+    font-weight: 300;
+    padding:0 .1rem;
+    font-size:.16rem;
+}
+.t-top p{
+    margin:0;
+    text-align: center;
+    font-size:.12rem;
+}
+span {
+    color:#666;
+}
+
+
+
+
+
+
+
+
+

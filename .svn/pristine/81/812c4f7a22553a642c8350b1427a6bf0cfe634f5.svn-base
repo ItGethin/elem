@@ -1,0 +1,73 @@
+<%-include ../public/header.ejs%>
+
+<script src="<%=host%>/xheditor/jquery/jquery-1.11.2.min.js" charset="utf-8"></script>
+<script src="<%=host%>/xheditor/xheditor-1.2.2.min.js" charset="utf-8"></script>
+<script src="<%=host%>/xheditor/xheditor_lang/zh-cn.js" charset="utf-8"></script>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+
+<%-include ../public/navbar.ejs%>
+
+
+
+
+
+<%-include ../public/nav.ejs%>
+
+
+
+<div class="content">
+
+    <div class="header">
+
+        <h1 class="page-title">修改轮播图</h1>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="../index">起始页</a> <span class="divider">/</span></li>
+        <li><a href="../slide">轮播图列表</a> <span class="divider">/</span></li>
+        <li class="active">修改轮播图</li>
+    </ul>
+
+    <div class="container-fluid">
+        <form id="tab" method="post" action="<%=host%>/admin/slide/doEdit">
+            <label>title</label>
+            <input name="title" type="text" value="<%=list.title%>" class="input-xlarge">
+            <label>description</label>
+            <input name="description" type="text" value="<%=list.description%>" class="input-xlarge">
+            <label>img</label>
+            <input name="img" type="text" value="<%=list.img%>" class="input-xlarge">
+            <label>article_id</label>
+            <input name="article_id" type="text" value="<%=list.article_id%>" class="input-xlarge">
+            <label>status</label>
+            <input name="status" type="text" value="<%=list.status%>" class="input-xlarge">
+            <label>addtime</label>
+            <input name="addtime" type="text" value="<%=list.addtime%>" class="input-xlarge">
+            <br/>
+            <input type="hidden" name="id" value="<%=list._id%>"/>
+            <input type="submit" value="提交"/>
+        </form>
+    </div>
+</div>
+
+
+
+<script src="<%=host%>/lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+    $(function() {
+        $('.demo-cancel-click').click(function(){return false;});
+    });
+</script>
+
+</body>
+</html>
+
+

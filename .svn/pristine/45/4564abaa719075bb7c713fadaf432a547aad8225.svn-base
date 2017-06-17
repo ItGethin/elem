@@ -1,0 +1,91 @@
+var express = require('express');
+var router = express.Router();
+var DB =require('../../model/db');
+
+var ObjectId = require('mongodb').ObjectID;
+
+/* GET home page. */
+var Host=''
+
+//查询所有数据
+router.get('/', function(req, res, next){
+    res.redirect('/admin/user/index');
+})
+
+router.get('/index', function(req, res, next) {
+
+
+    Host='http://'+req.headers.host;
+    DB.find('user',{},function(err,data){
+        res.render('admin/user/index',{
+            host:Host,
+            arr:data
+        });
+
+    })
+});
+
+//增加人员
+router.get('/add', function(req, res, next) {
+    res.render('admin/user/add',{
+        host:Host
+    })
+
+});
+router.post('/doAdd', function(req, res, next) {
+    DB.insertOne('user',req.body,function(err){
+        if(err){
+            console.log(err);
+            return;
+        }
+        res.redirect('/admin/user/index');
+
+
+    })
+});
+
+//删除人员
+router.get('/remove', function(req, res, next) {
+    DB.deleteMany('user', {'username':req.query.username}, function(err){
+        if(err){
+            console.log(err);
+            return;
+        }
+        res.redirect('/admin/user/index');
+    })
+});
+
+//修改信息
+router.get('/edit', function(req, res, next) {
+
+    //console.log(Host);
+
+    DB.find('user',{'username':req.query.username},function(err,data){
+        res.render('admin/user/edit',{
+            host:Host,
+            arr:data
+        });
+
+    })
+});
+router.post('/doEdit', function(req, res, next) {
+
+    DB.updateOne('user', {'_id':new ObjectId(req.query._id)}, req.body, function(err){
+        if(err){
+            console.log(err);
+            return;
+        }
+        //res.send('修改成功');
+        res.redirect('/admin/user/index');
+
+    })
+});
+
+
+
+
+
+
+
+
+module.exports = router;

@@ -1,0 +1,210 @@
+html,body{
+    width:100%;
+    font-size:625%;
+    padding:0;
+    margin:0;
+}
+body{
+    font-size:.12rem;
+}
+.container-wrap{
+	background:#f0f0f0;
+}
+.container-wrap>section{
+	background:#fff;
+}
+.top-product{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #06C1AE;
+    padding:0.1rem;
+    box-sizing: border-box;
+}
+.top-product h2{
+    width:60%;
+    color:#fff;
+    font-weight: 300;
+    text-align: center;
+}
+.top-product>div{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+}
+.top-product>div a{
+    display: block;
+    width:50%;
+    height:100%;
+    text-decoration: none;
+    text-align: center;
+}
+.top-product>div a span{
+    color:#fff;
+    display: block;
+	font-size:.12rem;
+}
+.top-product i.iconfont{
+	color:#fff;
+	font-size:0.26rem;
+}
+.top-product>i.iconfont{
+	font-size:0.32rem;
+	margin-top:0.1rem;
+}
+.shopping{
+	position:relative;
+	padding:0.14rem 0.1rem;
+	border-bottom:1px solid #DDD8CE;
+}
+.shopping h4{
+		color:#06c1ae;
+		font-size:0.26rem;
+		display:inline-block;
+		margin:0;
+		margin-right:0.03rem;
+}
+.shopping  .menshijia{
+	color:#999;
+	
+	
+}
+.shopping .buyfirst{
+	color:#fff;
+	border:none;
+	background:#f90;
+	padding:0 0.16rem;
+	border-radius:0.03rem;
+	cursor:pointer;
+	width:0.98rem;
+	height:0.4rem;
+	line-height:0.4rem;
+	position:absolute;
+	right:0.1rem;
+	top:0.11rem;
+	font-size:0.2rem;
+	box-sizing: content-box;
+}
+.shangping-shows{
+	padding:0.14rem 0.1rem;
+	margin-bottom:0.1rem;
+}
+.shangp-top{
+	color:#6bbd0;
+	display:flex;
+	margin-bottom:0.1rem;
+}
+.shangping-shows img{
+	width:0.2rem;
+	height:0.2rem;
+	margin-right:0.05rem;
+	vertical-align: middle;
+	
+}
+.shangp-top span{
+	display:inline-block;
+	width:50%;
+	
+}
+
+.shangping-img{
+    width:100%;
+    overflow: hidden;
+    height:1.92rem;
+    position: relative;
+}
+.shangping-img img{
+    width:100%;
+    display: block;
+    font-size:0;
+    margin-top:-.23rem;
+}
+.shangping-img h2,.shangping-img h3{
+    position: absolute;
+    color:#fff;
+    left:.1rem;
+}
+.shangping-img h2 {
+    bottom:.3rem;
+}
+.shangping-img h3 {
+    bottom:.1rem;
+}
+
+
+.st-cen{
+	color:#f90;
+	padding:0.14rem 0.1rem;
+	
+}
+.st-cen .star{
+	display:inline-block;
+	
+}
+.st-cen .pingjia{
+	float:right;
+	color:#999;
+	
+}
+.product-content{
+	padding:0.14rem 0.1rem;
+	margin-top:0.1rem;
+	position: relative;
+	
+}
+.product-content h3{
+	font-size:0.18rem;
+	font-weight: normal;
+	border-bottom:#efefef;
+	border-bottom:1px solid #DDD8CE;
+	padding-bottom:0.15rem;
+}
+.product-content p{
+	max-width:80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color:#666;
+	font-size:0.14rem;
+}
+.product-content .distancelest{
+	color:#EB8706;
+	margin-left:0.2rem;
+}
+.product-main{
+	display:flex;
+	
+}
+.product-content-left{
+	border-right:1px solid #DDD8CE;
+	width:80%;
+	
+	
+}
+.product-content-right{
+	width:0.7rem;
+	text-align:center;
+	padding-top:0.3rem;
+	padding-left:0.1rem;
+}
+.translate{
+	transform:rotate(180deg);
+}
+.gotogood-content{
+	
+	font-size:0.3rem;
+	margin-top:0.1rem;
+	color:#06c1ae;
+}
+ .seemore{
+	color:#06c1ae;
+	display:block;
+	font-size:0.16rem;
+	text-decoration: none;
+	border-top:1px solid #DDD8CE;
+	padding:0.1rem;
+	margin:0.1rem 0;
+}
+.seemore .seemore-icon{
+	float:right;
+}

@@ -1,0 +1,105 @@
+
+
+html {
+	background-color: #f5f5f5;
+	font-size: 625%;
+}
+body {
+	font-size: 16px;
+}
+header {
+	height: .4rem;
+	background-color: #0097ff;
+	text-align: center;
+}
+header h3 {
+	font-size: .16rem;
+	font-weight: 700;
+	color: #fff;
+	line-height: .4rem;
+}
+
+.user{
+	display: flex;
+	background-color: #fff;
+}
+.user a {
+	display: block;
+	flex: 1;
+	text-align: center;
+	font-size: .16rem;
+	color: #333;
+	font-weight: 600;
+	/*color: #2395ff;*/
+	line-height: .4rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #eee;
+}
+
+.user a.active {
+	color: #2395ff;
+	border-bottom: 2px solid #2395ff;
+}
+
+.dn-container {
+	background-color: #fff;
+	padding-bottom: .1rem;
+}
+.dn-container .dn-info {
+	display: flex;
+	padding: .15rem;
+	justify-content: space-between;
+}
+.dn-container .dn-info .info-msg {
+	display: flex;
+} 
+.dn-container .dn-info .info-msg img {
+	display: inline-block;
+	width: .6rem;
+	height: .6rem;
+}
+.dn-container .dn-info .info-msg a {
+	display: block;
+	padding-left: .1rem;
+}
+.dn-container .dn-info .info-msg a i {
+	display: block;
+	font-style: normal;
+	font-size: .18rem;
+	color: #000;
+	font-weight: 700;
+	padding-top: .05rem;
+	margin-bottom: .1rem;
+}
+.dn-container .dn-info .info-msg a em {
+	display: block;
+	font-style: normal;
+	font-size: .14rem;
+}
+.dn-container .dn-info span {
+	padding-top: .05rem;
+	
+}
+
+.dn-container .dn-price {
+	padding-left: .8rem;
+}
+.dn-container .dn-price span {
+	display: block;
+	
+}
+.dn-container .dn-price span:nth-child(1) {
+	color: #666;
+	margin-bottom: .05rem;
+}
+
+
+.message {
+	margin-top: .2rem;
+}
+
+.message p {
+	text-align: center;
+	font-size: .14rem;
+	color: #666;
+}

@@ -1,0 +1,58 @@
+<%-include ../public/header.ejs %>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+<%-include ../public/navbar.ejs%>
+
+<%-include ../public/nav.ejs%>
+
+<div class="content">
+
+  <div class="header">
+
+    <h1 class="page-title">增加商品</h1>
+  </div>
+
+  <ul class="breadcrumb">
+    <li><a href="../index">首页</a> <span class="divider">/</span></li>
+    <li><a href="../products">商品列表</a> <span class="divider">/</span></li>
+    <li class="active">增加商品</li>
+  </ul>
+
+  <div class="container-fluid">
+    <form id="tab" method="post" action="<%=host%>/admin/products/doAdd">
+      <label>img</label>
+      <input name="img" type="text" class="input-xlarge">
+      <label>title</label>
+      <input name="title" type="text" class="input-xlarge">
+      <label>description</label>
+      <input name="description" type="text" class="input-xlarge">
+
+      <label>old_price</label>
+      <input name="old_price" type="text" class="input-xlarge">
+      <label>price</label>
+      <input name="price" type="text" class="input-xlarge">
+      <label>product_content</label>
+      <input name="product_content" type="text" class="input-xlarge">
+      <br/>
+      <input type="submit" value="提交"/>
+    </form>
+  </div>
+</div>
+
+<script src="<%=host %>/lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+  $("[rel=tooltip]").tooltip();
+  $(function() {
+    $('.demo-cancel-click').click(function(){return false;});
+  });
+</script>
+
+</body>
+</html>

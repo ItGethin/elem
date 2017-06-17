@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>修改人员信息页面</h2>
+<div>
+    <form method="post" action="<%= host %>/admin/user/doEdit?_id=<%= arr[0]._id %>" >
+        <lable>用户名:</lable>
+        <input type="text" name="username" value="<%= arr[0].username %>"/><br>
+        <lable>密 码 : </lable>
+        <input type="password" name="password" value="<%= arr[0].password %>" /><br>
+        <lable>电  话 : </lable>
+        <input type="text" name="phone" value="<%= arr[0].phone %>"/><br>
+        <lable>email : </lable>
+        <input type="text" name="email" value="<%= arr[0].email %>"/><br>
+
+        <input type="hidden" name="status" value="1"/>
+
+        <input type="hidden" name="addtime" id="time" />
+
+        <input type="submit" value="提交" id="btn"/>
+
+    </form>
+</div>
+</body>
+<script>
+    var timeNode=document.getElementById('time');
+    var btnNode=document.getElementById('btn');
+    btnNode.onclick=function(){
+        var date=new Date();
+        timeNode.value=date.getTime();
+    }
+
+</script>
+</html>

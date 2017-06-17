@@ -1,0 +1,286 @@
+header {
+	padding: .09rem .12rem;
+	background-color: #0096ff
+}
+
+header .h-top {
+	display: flex;
+	font-size: .15rem;
+	height: .3rem;
+	line-height: .3rem;
+	justify-content: space-between;
+	color: #fff
+}
+
+header .h-search input {
+	margin: .06rem 0;
+	width: 100%;
+	border-radius: .15rem;
+	height: .29rem;
+	text-align: center;
+	font-size: .12rem;
+	color: #333
+}
+
+header .h-search .uls {
+	width: 100%;
+	overflow-x: scroll
+}
+
+header .h-search .uls ul {
+	display: flex;
+	white-space: nowrap
+}
+
+header .h-search .uls ul li {
+	float: left;
+	padding-right: .13rem
+}
+
+header .h-search .uls ul li a {
+	color: #fff
+}
+
+section {
+	border-bottom: .01rem solid #efefef
+}
+
+.swiper-container {
+	height: 1.51rem;
+	width: 100%;
+	background-color: #fff
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+	height: .05rem;
+	width: .05rem;
+	margin: 0 .02rem
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #666
+}
+
+.swiper-container .swiper-slide ul {
+	display: flex;
+	height: 82%;
+	justify-content: center;
+	flex-wrap: wrap
+}
+
+.swiper-container .swiper-slide ul li {
+	width: 25%;
+	height: 45%;
+	margin-top: .09rem;
+	display: flex;
+	justify-content: center
+}
+
+.swiper-container .swiper-slide ul li a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%
+}
+
+.swiper-container .swiper-slide ul li a img {
+	width: 50%
+}
+
+.swiper-container .swiper-slide ul li a span {
+	font-size: .12rem
+}
+
+.Recommend {
+	background-color: #fff;
+	padding: 0 5%;
+	margin-top: .09rem
+}
+
+#root .Recommend h3 {
+    color: #333;
+    padding: 0;
+    font-size: .16rem;
+	height: .3rem;
+	line-height: .3rem;
+}
+
+.store {
+	width: 100%;
+	background-color: #fff
+}
+
+.store a {
+	display: flex;
+	width: 100%
+}
+
+.store a .st-left {
+	width: .51rem;
+	height: .51rem;
+	padding: .13rem .09rem
+}
+
+.store a .st-left img {
+	width: 100%
+}
+
+.store a .st-right {
+	padding: .13rem .09rem;
+	width: 100%;
+	flex: 1
+}
+
+.store a .st-right .st-top {
+	display: flex;
+	overflow: hidden;
+	justify-content: space-between
+}
+
+.store a .st-right .st-top>div {
+	display: flex
+}
+
+.store a .st-right .st-top>div span {
+	background-color: #ffd930;
+	color: #000
+}
+
+.store a .st-right .st-top h4 {
+	margin: 0;
+	color: #666
+}
+
+.store a .st-right .st-top i {
+	font-style: normal
+}
+
+.store a .st-right .st-cen {
+	display: flex;
+	align-items: center
+}
+
+.store a .st-right .st-cen .star {
+	position: relative;
+	width: .45rem
+}
+
+.store a .st-right .st-cen .star span {
+	display: inline-block;
+	height: .09rem;
+	width: .09rem;
+	float: left;
+}
+
+.store a .st-right .st-cen .star .star1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden
+}
+
+.store a .st-right .st-cen .star .star1 span {
+	background: url("../images/star.jpg") no-repeat;
+}
+
+.store a .st-right .st-cen .star .star2 {
+	width: 50%;
+	overflow: hidden;
+	white-space: normal;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.store a .st-right .st-cen .star .star2>div {
+	display: block;
+	width: .45rem
+}
+
+.store a .st-right .st-cen .star .star2 span {
+	background: url()
+}
+
+.store a .st-right .st-cen em,.store a .st-right .st-cen i {
+	font-style: normal;
+	font-size: .12rem
+}
+
+.store a .st-right .st-cen i {
+	color: red
+}
+
+.store a .st-right .st-bo {
+	display: flex;
+	justify-content: space-between
+}
+
+.store a .st-right .st-bo .st-bo-left span {
+	color: #666
+}
+
+.store a .st-right .st-bo .st-bo-left span:last-child {
+	color: #666
+}
+
+.store a .st-right .st-bo>div>span {
+	font-size: .12rem
+}
+
+.store a .st-right .st-bo>div>span:last-child {
+	color: #2395ff
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #fff
+}
+
+footer ul {
+	display: flex;
+	width: 100%
+}
+
+footer ul li {
+	width: 25%
+}
+
+footer ul li a {
+	display: inline-block;
+	height: .5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center
+}
+
+footer ul li a img {
+	height: 40%
+}
+
+.to-top {
+	height: .35rem;
+	width: .35rem;
+	position: fixed;
+	bottom: .7rem;
+	right: .1rem;
+	background-color: #fff;
+	border: .01rem solid silver;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.to-top img {
+	display: block
+}
+
+.jiade {
+	height: .5rem;
+	width: 100%
+}

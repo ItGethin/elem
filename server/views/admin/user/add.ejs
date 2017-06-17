@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>增加人员页面</h2>
+<div>
+    <form method="post" action="<%= host %>/admin/user/doAdd" >
+        <lable>用户名:</lable>
+        <input type="text" name="username" /><br>
+        <lable>密 码 : </lable>
+        <input type="password" name="password" /><br>
+        <lable>电  话 : </lable>
+        <input type="text" name="tel" /><br>
+        <lable>地址 : </lable>
+        <input type="text" name="address" /><br>
+        <lable>email : </lable>
+        <input type="text" name="email" /><br>
+
+        <input type="hidden" name="status" value="1"/>
+
+        <input type="hidden" name="add_time" id="time" />
+
+        <input type="submit" value="提交" id="btn"/>
+
+    </form>
+</div>
+
+<script>
+    var timeNode=document.getElementById('time');
+    var btnNode=document.getElementById('btn');
+    btnNode.onclick=function(){
+        var date=new Date();
+        timeNode.value=date.getTime();
+    }
+
+</script>
+</body>
+</html>

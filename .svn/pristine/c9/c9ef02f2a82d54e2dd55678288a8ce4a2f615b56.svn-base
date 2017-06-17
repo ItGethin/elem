@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  
+
+
+  <script src="./js/jquery.min.js"></script>
+	<script src="./js/swiper-3.4.2.min .js"></script>
+  <script src="./js/iscroll.js"></script>
+	<script>        
+		  var mySwiper = new Swiper ('.swiper-container', {   
+		    // 如果需要分页器
+		    loop:true,
+		    pagination: '.swiper-pagination',
+		  });   
+		  	var tts=$(".number");
+		  	tts.each(function(index,ele){
+		  		var yuyu=$(ele).text()/5;
+		  		$(ele).prev().find(".star2").css("width",yuyu*100+"%");
+		  	});
+
+		  	var distance=$(".distance");
+
+		  	distance.each(function(index,ele){
+		  		var num=parseInt($(ele).text())/1000;
+		  		num = num.toFixed(2);
+		  		$(ele).text(num+'km/');
+		  	})
+
+		  $(window).scroll(function () {
+		});
+	  </script>
+  </body>
+</html>

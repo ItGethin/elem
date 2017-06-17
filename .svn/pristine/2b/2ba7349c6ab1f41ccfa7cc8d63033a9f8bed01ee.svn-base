@@ -1,0 +1,209 @@
+.hasheight-top{
+	height:0.4rem;
+	
+}
+.mui-content .headersection{
+				background:#0097ff;
+				color:#fff;
+				
+			}
+			.person-icon{
+				width:0.6rem;
+				height:0.6rem;
+				
+			}
+			.headersection{
+				padding:0.25rem 0.15rem;
+			}
+			.headersection .gotologin{
+				display:block;
+				font-size:0.2rem;
+				color:#fff;
+				font-weight:300;
+			}
+			.headersection .return{
+				transform:rotate(180deg);
+				float:right;
+				height:0.3rem;
+				margin-top:0.2rem;
+			}
+			.left{
+				float:left;
+				margin-right:0.18rem;
+				width:0.6rem;
+				height:0.6rem;
+			}
+			.left .icon,.left img{
+				width:100%;
+				height:100%;
+				border-radius:50%;
+			}
+			.right{
+				line-height: 0.3rem;
+				
+			}
+			.right .icon{
+				width:0.2rem;
+				height:0.2rem;
+				vertical-align:middle;
+				
+				
+			}
+			.
+			.mui-table-view-cell{
+				line-height: 0.5rem;
+			}
+			.mui-table-view .mui-media-object.mui-pull-left{
+			 	width:0.2rem;
+			 }
+			 .guide {
+			 	background: #fff;
+			 	margin-bottom:0.1rem;
+			 	
+			 }
+			.guide   ul{
+			 	display:flex;
+			 }
+			 .guide ul li {
+			 	width:50%;
+			 	text-align:center;
+			 	padding:0.2rem 0;
+			 }
+			 .guide ul li:first-child{
+			 	border-right:1px solid #ddd;
+			 }
+			 .guide ul li .icon{
+			 	display:block;
+			 	width:0.255rem;
+			 	height:0.355rem;
+			 	margin:0 auto;
+			 	
+			 	
+			 }
+			 .guide .youhuinum{
+			 	font-size:0.28rem;
+			 	font-weight:bolder;
+			 	color:rgb(255, 95, 62);
+			 	display:block;
+			 }
+			 .guide .jifennum{
+			 	font-size:0.28rem;
+			 	font-weight:bolder;
+			 	color:rgb(106, 194, 11);
+			 	display:block;
+			 }
+			 .lanmu{
+			 	font-size:0.18rem;
+			 }
+			 .lanmu ul:first-child{
+			 	margin-bottom:0.1rem;
+			 }
+		
+			 .myul-list {
+			 	padding:0.12rem 0;
+			 	background:#fff;
+			 	margin-bottom:0.1rem;
+			 }
+			 .myul-list>div{
+			 	display:flex;
+			 	padding-left:0.15rem;
+			 }
+			 .myul-list aside{
+			 	width:0.18rem;
+			 	height:0.18rem;
+			 	margin-right:0.1rem;
+			 }
+			 .myul-list aside .iconleft{
+			 	display:block;
+			 	width:0.18rem;
+			 	height:0.18rem;
+			 	margin-top:0.11rem;
+			 	
+			 }
+			 .myul-list  .myul-list-right{
+			 	display:inline-block;
+			 	flex:1;
+			 	position:relative;
+			 	border-bottom:1px solid #ddd;
+			 	font-size:0.16rem;
+			 	line-height: 0.16rem;
+			 	font-size:0.16rem;
+			 	padding:0.12rem 0;
+			 }
+			 .myul-list div:nth-last-of-type(1) .myul-list-right{
+			 	border-bottom:0;
+			 }
+			 .myul-list  .myul-list-right .iconright{
+			 	width:0.3rem;
+			 	position:absolute;
+			 	right:0.1rem;
+			 	top:50%;
+			 	transform: translate(0,-50%) rotate(180deg);
+			 }
+			 .phone{
+			 	color:#fff;
+			 }
+			 .jifenshangcheng{
+			 	color:#fc7b53;
+			 }
+			 .hiuyuan{
+			 	color:#ffc636;
+			 }
+             .iconfont{
+        	color:#0097ff;
+        }
+/*-------------------账户信息------------------------*/
+.maincontent ul{
+				background:#fff;
+			}
+			.maincontent ul li{
+				border-top:1px solid #ddd;
+				border-bottom:1px solid #ddd;
+				padding:0.15rem 0.14rem;
+			}
+			.maincontent ul li:nth-of-type(1){
+				border-bottom:0;
+			}
+			.maincontent ul li span:nth-of-type(1){
+				font-weight:bold;
+				font-size:0.16rem;
+			}
+			.maincontent ul li span:nth-of-type(2){
+				float:right;
+			}
+			.maincontent ul li span:nth-of-type(2) img{
+				width:0.45rem;
+				height:0.45rem;
+				border-radius:0.4rem;
+			}
+			.maincontent ul li .icontranslate{
+				transform:rotate(180deg);
+				display:inline-block;
+				width:0.16rem;
+				height:0.13rem;
+				vertical-align:middle;
+			}
+			.maincontent ul li .phone{
+				width:0.16rem;
+				height:0.15rem;
+				
+			}
+			.icon{
+				width:0.1rem;
+				height:0.1rem;
+				vertical-align: -0.15em;
+   				fill: currentColor;
+   				overflow: hidden;	
+			}
+			.mui-content>h2{
+				margin-left:0.15rem;
+				margin-top:0.1rem;
+				margin-bottom:0.15rem;
+				font-weight:normal;
+				font-size:0.16rem;
+			}
+
+
+
+
+

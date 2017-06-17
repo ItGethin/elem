@@ -1,0 +1,86 @@
+var express = require('express');
+var router = express.Router();
+var DB=require('../model/db');
+
+/* GET users listing. */
+router.get('/products', function(req, res, next) {
+  DB.find('products',{}, function (err,data) {
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+});
+
+router.get("/article",function(req,res,next){
+  DB.find("article",{},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+})
+
+router.get('/get', function(req, res, next) {
+  var page=req.query.page;
+  DB.find('user',{},{pageSize:1,page:page},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({result:data,success:1});
+  })
+})
+
+router.get("/class",function(req,res,next){
+  DB.find("cate",{},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+
+})
+
+
+router.get('/order/:username', function(req, res) {
+
+  var username = req.query.username;
+  DB.find('order', {'username': username}, function(err, data) {
+    if(err) {
+      console.log(err);
+      return;
+    }
+    res.json({'result':data})
+  })
+})
+
+
+// 订单保存
+router.post('/saveorder', function(req, res) {
+  var data = req.body.order;
+  DB.insertOne('order', {data}, function(err, data) {
+    if(err) {
+      console.log(err);
+      return;
+    }
+    res.json({'result':'订单保存成功'});
+  })
+})
+
+
+// 新闻的获取
+router.get('/news', function(req, res) {
+  DB.find('article', {}, function(err, data) {
+    if(err) {
+      console.log(err);
+      return;
+    } 
+    res.json({'result': data});
+  })
+})
+
+module.exports = router;

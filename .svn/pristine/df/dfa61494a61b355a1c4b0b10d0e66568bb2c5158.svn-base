@@ -1,0 +1,150 @@
+
+
+<%-include ../public/header.ejs%>
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+
+      <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li>
+      <li id="fat-menu" class="dropdown">
+        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="icon-user"></i> Jack Smith
+          <i class="icon-caret-down"></i>
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">My Account</a></li>
+          <li class="divider"></li>
+          <li><a tabindex="-1" class="visible-phone" href="#">Settings</a></li>
+          <li class="divider visible-phone"></li>
+          <li><a tabindex="-1" href="sign-in.html">Logout</a></li>
+        </ul>
+      </li>
+
+    </ul>
+    <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+  </div>
+</div>
+
+
+
+
+
+<%-include ../public/nav.ejs%>
+
+
+
+<div class="content">
+
+  <div class="header">
+
+    <h1 class="page-title">Edit User</h1>
+  </div>
+
+  <ul class="breadcrumb">
+    <li><a href="index.html">文章</a> <span class="divider">/</span></li>
+    <li><a href="users.html">文章列表</a> <span class="divider">/</span></li>
+    <li class="active">增加文章</li>
+  </ul>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+
+      <div class="btn-toolbar">
+        <!--<button class="btn btn-primary"><i class="icon-save"></i><a href="<%=host%>/">保存</a></button>-->
+
+        <div class="btn-group">
+        </div>
+      </div>
+      <div class="well">
+
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane active in" id="home">
+<form id="tab" action="<%=host%>/admin/article/addPost" method="post" enctype="multipart/form-data">
+
+              <label>文章标题</label>
+              <input type="text" name="title" value='<%=list.title%>'  class="input-xlarge">
+              <label>作者</label>
+              <input type="text" name="author" value='<%=list.author%>' class="input-xlarge">
+              <label>图片</label>
+              <img src="<%=list.img%>" style='width:60px;height:60px;display:block' alt="">
+              <input type="file" name="img" value='' class="input-xlarge">
+              <label>文章描述</label>
+              <input type="text" name="description" value='<%=list.description%>' class="input-xlarge">
+              <label>文章详情</label>
+              <textarea style="width: 800px;height: 400px;" name="content" class="xheditor"><%=list.content%></textarea>
+
+              <input type="submit" value="提交" style="width: 200px; height: 60px; margin-top:10px ">
+
+            </form>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <form id="tab2">
+              <label>New Password</label>
+              <input type="password" class="input-xlarge">
+              <div>
+                <button class="btn btn-primary">Update</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 id="myModalLabel">Delete Confirmation</h3>
+        </div>
+        <div class="modal-body">
+
+          <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+          <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+        </div>
+      </div>
+
+
+
+      <footer>
+        <hr>
+
+        <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+        <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+        <p>&copy; 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+      </footer>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="<%=host%>/lib/bootstrap/js/bootstrap.js"></script>
+<script src="<%=host%>/javascripts/jquery-1.4.4.min.js"></script>
+<script src="<%=host%>/javascripts/xheditor.js"></script>
+<script src="<%=host%>/javascripts/xheditor_lang/zh-cn.js"></script>
+<script type="text/javascript">
+ 
+  $(function() {
+    $('.demo-cancel-click').click(function(){return false;});
+    $('#elm1').xheditor();
+    console.log('<%=list.content%>');
+  });
+</script>
+
+</body>
+</html>
+
+

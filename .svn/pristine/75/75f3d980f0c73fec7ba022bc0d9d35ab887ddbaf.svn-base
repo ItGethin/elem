@@ -1,0 +1,47 @@
+var express = require('express');
+var router = express.Router();
+var DB=require('../../model/db');
+
+/* GET users listing. */
+router.get('/slide', function(req, res, next) {
+  DB.find('slider',{}, function (err,data) {
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+});
+
+router.get("/article",function(req,res,next){
+  DB.find("article",{},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+})
+
+router.get('/get', function(req, res, next) {
+  var page=req.query.page;
+  DB.find('user',{},{pageSize:1,page:page},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({result:data,success:1});
+  })
+})
+
+router.get("/class",function(req,res,next){
+  DB.find("cate",{},function(err,data){
+    if(err){
+      console.log(err);
+      return;
+    }
+    res.json({"result":data});
+  })
+
+})
+module.exports = router;

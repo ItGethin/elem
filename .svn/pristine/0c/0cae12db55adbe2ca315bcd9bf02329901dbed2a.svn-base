@@ -1,0 +1,110 @@
+var express = require('express');
+var router = express.Router();
+
+var bodyParser = require('body-parser');
+
+var async = require('async');
+//post数据
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({ extended: false }));
+
+
+//引入Db
+
+var DB=require('../../model/db');
+
+var Host='';
+
+router.use(function(req, res,next){
+  Host="http://"+req.headers.host;
+  next();
+})
+
+router.get('/', function(req, res){
+    DB.find('products',{}, function (err, data) {
+        if(err){
+            console.log(err);
+        }
+
+        res.render('admin/slide/index',{
+            host:Host,
+            list:data
+        })
+    })
+});
+
+
+router.get('/add', function (req, res) {
+    res.render('admin/slide/add',{
+        host:Host
+    })
+});
+
+router.post('/doAdd', function(req, res) {
+
+  DB.insertOne('products',req.body, function (err) {
+      if(err){
+          console.log(err);
+          return;
+      }
+      res.redirect(Host+'/admin/slide');
+  })
+});
+
+//编辑页面
+router.get('/edit', function(req, res) {
+    var id=req.query.id;
+    DB.find('products',{'_id':new DB.ObjectID(id)},function(err,data){
+        if(err){
+            console.log(err);
+            return;
+        }
+
+        res.render('admin/slide/edit',{
+            host:Host,
+            list:data[0]
+        })
+    });
+});
+
+
+//执行修改操作
+router.post('/doEdit',function(req, res) {
+    var id=req.body.id;
+    var title=req.body.title;
+    var description=req.body.description;
+    var img=req.body.img;
+    var old_price=req.body.old_price;
+    var price=req.body.price;
+    var product_content=req.body.product_content;
+
+    DB.updateOne('products',{'_id':new DB.ObjectID(id)},{
+        title: title,
+        description:description,
+        img:img,
+        old_price:old_price,
+        price:price,
+        product_content:product_content
+    },function(err){
+            if(err){
+                console.log('修改商家失败');
+                return;
+            }
+            res.redirect(Host+'/admin/slide');
+    })
+});
+
+
+router.get('/delete', function(req, res) {
+    var id = req.query.id;
+
+    DB.deleteMany('products', {'_id':new DB.ObjectID(id)}, function(err){
+        if(err){
+            console.log(err);
+            return;
+        }
+        res.redirect('/admin/slide');
+    })
+});
+
+module.exports = router;
